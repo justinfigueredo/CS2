@@ -1,0 +1,17 @@
+Project #1 - User Login 
+Justin Figueredo
+
+Login: a;lfks          (invalid)
+   -- no uppercase letter
+   -- no digit
+   -- no special character
+Login: asdg            (invalid)
+   -- no uppercase letter
+   -- no digit
+   -- no special character
+   -- too short (minimum of 5 characters)
+Login: asg             (invalid)
+   -- no uppercase letter
+   -- no digit
+   -- no special character
+   -- too short (minimum of 5 characters)
