@@ -1,0 +1,10 @@
+Preparedness: I think that I am adequately prepared for CS2 after completing this program. I was able to do it in a timely manner and make it work.
+The program was not hard, it just took a while to complete with all of the testing and refreshers on java that I needed.
+I looked up quite a bit of things because I have not programmed in java in over two years. I am used to C# so I just needed some refreshers on java.
+
+Development Process: I usually develop incrementally and test every method after I make it to make sure it works.
+Incremental development works well for me. I usually have very little errors later in the program when I develop incrementally, so it works well for me.
+I also have not written down my plan with paper and pencil before coding in the past which actually worked nicely.
+
+Testing: I usually make my own tests and test methods as I go because if you dont it makes it really hard to debug later in the development process.
+One of my tests showed me that I did not call my check digit method in the main method. 

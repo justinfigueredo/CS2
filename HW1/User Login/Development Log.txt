@@ -1,0 +1,26 @@
+User Login Development Log
+
+- Made side program for stringReader and stringBuffer (took about an hour since i have never used it before)
+
+- Made skeleton program (took about 10 minutes)
+
+- Completed method to read in user login and the method to print the user login to the screen (took about 5 minutes because i had already tested it in the side program)
+
+- Completed method to check for an uppercase and lowercase letter (took about 30 minutes because i did not know what the java method was to check if a character is uppercase
+or lowercase so i googled it)
+
+- Completed method to check if the user login has at least one of the symbols: !,@,#,$ (took about 5 minutes)
+
+- Completed method to check if the user login has at least one digit (took about 15 mins because i had to google to find the Character.isDigit() method)
+
+- Completed method to check the length of the user login (took about 5 minutes)
+
+- Completed method to check for invalid characters (took about 5 minutes)
+
+- Completed method to check validity and made it so all of the check methods used a boolean (took about 10 minutes)
+
+- Made loop and method to decide whether or not there are more user logins (took about 20 mins)
+
+- Modified the print user method to use the booleans from the check methods and to format everything correctly (took about 20 minutes)
+
+- Completed method to add to the final report and the method to print the report at the end to a file (took about 20 minutes)
