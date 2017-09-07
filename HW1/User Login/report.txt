@@ -1,17 +1,51 @@
 Project #1 - User Login 
 Justin Figueredo
 
-Login: a;lfks          (invalid)
-   -- no uppercase letter
-   -- no digit
+Login: q@ph8S       (valid)
+Login: 6Aqa!ur      (valid)
+Login: cRa#3Het     (valid)
+Login: ku5TaHa$s    (valid)
+Login: Zat7!efrA    (valid)
+Login: S#Utr5sp3    (valid)
+Login: Y5&bph       (invalid)
    -- no special character
-Login: asdg            (invalid)
-   -- no uppercase letter
-   -- no digit
-   -- no special character
+Login: c7U#         (invalid)
    -- too short (minimum of 5 characters)
-Login: asg             (invalid)
+Login: hu!Afe       (invalid)
+   -- no digit
+Login: c2etha&a     (invalid)
    -- no uppercase letter
+   -- no special character
+Login: UFH4@R       (invalid)
+   -- no lowercase letter
+Login: #8rE         (invalid)
+   -- too short (minimum of 5 characters)
+Login: @Et3         (invalid)
+   -- too short (minimum of 5 characters)
+Login: 638262       (invalid)
+   -- no uppercase letter
+   -- no lowercase letter
+   -- no special character
+Login: 243545       (invalid)
+   -- no uppercase letter
+   -- no lowercase letter
+   -- no special character
+Login: rIaxiat      (invalid)
    -- no digit
    -- no special character
-   -- too short (minimum of 5 characters)
+Login: NlaswlU      (invalid)
+   -- no digit
+   -- no special character
+Login: Uj3ods s     (invalid)
+   -- invalid character
+   -- no special character
+Login: Udj	435@     (invalid)
+   -- invalid character
+Login: sdhf		sdfg   (invalid)
+   -- no uppercase letter
+   -- no digit
+   -- invalid character
+   -- no special character
+Login: slkd	 osf d@1 (invalid)
+   -- no uppercase letter
+   -- invalid character
