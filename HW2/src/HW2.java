@@ -11,7 +11,8 @@ public CountriesLL countryLL;
 public boolean done = false;
 
 	public static void main(String[] args) throws IOException {
-		
+		try
+		{
 	HW2 thing = new HW2();	
 	Borders border = new Borders();
 	Scanner keyboard = new Scanner(System.in); // using scanner for user interface
@@ -30,6 +31,8 @@ public boolean done = false;
 	}
 	
 	keyboard.close();
+		}
+		catch(Exception e){}
 	}
 	
 	public void importCountriesData() throws IOException
