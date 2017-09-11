@@ -39,7 +39,7 @@ public boolean done = false;
 	{
 		String data = "";
 		int count = 0;
-		CountriesLL previous = new CountriesLL();
+		CountriesLL previous = new CountriesLL("","","",0,0,0.0,0);
 			try {
 				BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\Justin\\workspace\\HW2\\Countries_Data.txt"));
 				while ((data = br.readLine()) != null) { // makes data equal to the next line and checks if it is null
@@ -56,14 +56,8 @@ public boolean done = false;
 					countryArray[count] = country;
 					count++; // implements countries as an array
 					
-					CountriesLL current = new CountriesLL();
-					current.countryName = parts[0];
-					current.latitude = parts[1];
-					current.longitude = parts[2];
-					current.countryArea = Integer.parseInt(parts[3]);
-					current.countryPopulation = Integer.parseInt(parts[4]);
-					current.countryGDP = Double.parseDouble(parts[5]);
-					current.countryYear = Integer.parseInt(parts[6]);
+					CountriesLL current = new CountriesLL(parts[0], parts[1], parts[2], Integer.parseInt(parts[3]), Integer.parseInt(parts[4]), Double.parseDouble(parts[5]), Integer.parseInt(parts[6]));
+					
 					if(countryLL == null)
 					{
 						countryLL = current;

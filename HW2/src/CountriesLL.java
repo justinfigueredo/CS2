@@ -10,4 +10,14 @@ public class CountriesLL {
 	int countryYear = 0;
 	CountriesLL next;
 
+	public CountriesLL(String name, String lat, String lon, int area, int pop, double gdp, int year)
+	{
+		countryName = name;
+		latitude = lat;
+		longitude = lon;
+		countryArea = area;
+		countryPopulation = pop;
+		countryGDP = gdp;
+		countryYear = year;
+	}
 }
