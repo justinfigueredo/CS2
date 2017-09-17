@@ -1,3 +1,8 @@
+//HW2 Countries
+//Justin Figueredo
+//9/14/2017
+//This program takes in Countries and Borders data and then makes and array and linked list of Countries objects.
+//This program will display countries that border a given country you give it or display countries with a population over the number you give it.
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -15,8 +20,10 @@ public boolean done = false;
 		{
 	HW2 thing = new HW2();	
 	Borders border = new Borders();
+	//CountriesLL countriesLL = new CountriesLL("","","",0,0,0.0,0);
 	Scanner keyboard = new Scanner(System.in); // using scanner for user interface
 	// gave each method an instance of border and/or thing because i'm not sure if we are allowed to use static
+	System.out.println("HW2");
 	thing.displayImportData(border, thing);
 	
 	while(!thing.done)
@@ -45,14 +52,7 @@ public boolean done = false;
 				while ((data = br.readLine()) != null) { // makes data equal to the next line and checks if it is null
 					
 					String[] parts = data.split(","); // splits the read in line into an array
-					Countries country = new Countries();
-					country.countryName = parts[0];
-					country.latitude = parts[1];
-					country.longitude = parts[2];
-					country.countryArea = Integer.parseInt(parts[3]);
-					country.countryPopulation = Integer.parseInt(parts[4]);
-					country.countryGDP = Double.parseDouble(parts[5]);
-					country.countryYear = Integer.parseInt(parts[6]);
+					Countries country = new Countries(parts[0], parts[1], parts[2], Integer.parseInt(parts[3]), Integer.parseInt(parts[4]), Double.parseDouble(parts[5]), Integer.parseInt(parts[6]));
 					countryArray[count] = country;
 					count++; // implements countries as an array
 					
@@ -146,15 +146,9 @@ public boolean done = false;
 	
 	public void displayImportData(Borders border, HW2 thing) throws IOException
 	{
-		Scanner keyboard = new Scanner(System.in);
-		System.out.print("Would you like to import the data? (y/n)"); 
-		String input = keyboard.nextLine();
-	
-		if(input.equals("y") || input.equals("Y")) // check to make sure the user wants to import the data
-		{
+		System.out.println("Importing Data"); 
 		border.importBordersData(); //import data
 		thing.importCountriesData(); //import data
-		}
 	}
 	
 	public void displayBorderingCountries(Borders border)

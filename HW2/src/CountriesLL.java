@@ -20,4 +20,5 @@ public class CountriesLL {
 		countryGDP = gdp;
 		countryYear = year;
 	}
+	
 }
