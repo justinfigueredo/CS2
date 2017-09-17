@@ -20,10 +20,9 @@ public boolean done = false;
 		{
 	HW2 thing = new HW2();	
 	Borders border = new Borders();
-	//CountriesLL countriesLL = new CountriesLL("","","",0,0,0.0,0);
 	Scanner keyboard = new Scanner(System.in); // using scanner for user interface
 	// gave each method an instance of border and/or thing because i'm not sure if we are allowed to use static
-	System.out.println("HW2");
+
 	thing.displayImportData(border, thing);
 	
 	while(!thing.done)
