@@ -1,0 +1,7 @@
+User Login Development Log
+
+- copied HW4 since it had a lot of what I needed(took about 10 minutes)
+
+- Added Map to make it easier and sorted it(took about 2 hour because I did not know how to use it or sort it right away)
+
+- Added in the linked list implementation(took about 1 hour and a half because sorting seemed tricky to me
