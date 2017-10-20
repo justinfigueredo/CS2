@@ -1,0 +1,48 @@
+Integer Number Tests:
+
+10 numbers:
+98 42 34 13 5 49 17 33 18 15 
+5 13 15 17 18 33 34 42 49 98 
+Mergesort took: 262788553943055
+Java sort took: 250165
+
+50 numbers:
+Mergesort took: 366860
+Java sort took: 14951
+
+200 numbers:
+Mergesort took: 424113
+Java sort took: 1459
+
+Real Number Tests:
+
+10 numbers:
+31.05 78.16 56.73 13.93 92.92 82.55 31.80 97.55 51.19 89.14 
+13.93 31.05 31.80 51.19 56.73 78.16 82.55 89.14 92.92 97.55 
+Mergesort took: 2760570
+Java sort took: 6564
+
+50 numbers:
+Mergesort took: 564512
+Java sort took: 1459
+
+200 numbers:
+Mergesort took: 375613
+Java sort took: 1094
+
+String Tests:
+
+10 strings:
+2psE4n 2clpux NJdvOu CjqRlU zf7Qbf lolIpQ G0ePgw SdpiH2 NT3XUm MGhD3O 
+2clpux 2psE4n CjqRlU G0ePgw MGhD3O NJdvOu NT3XUm SdpiH2 lolIpQ zf7Qbf 
+Mergesort took: 60535
+Java sort took: 6564
+
+50 strings:
+Mergesort took: 139670
+Java sort took: 730
+
+200 strings:
+Mergesort took: 534610
+Java sort took: 1458
+
