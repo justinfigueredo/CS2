@@ -1,0 +1,6 @@
+paving              paving     
+809                 809        
+forcible            forcible   
+association         association 
+folding             folding    
+java.io.BufferedWriter@3d4eac69

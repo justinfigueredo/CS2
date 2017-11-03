@@ -1,0 +1,8 @@
+Part 1:
+
+I used 9227 as the length for my array as a default because I knew that the load factor would be about 1.1 given that there were about 10150 unique words.
+
+Part 2:
+
+I used 9227 as the length for the java hash table for the same reason as above, but made the load factor 0.75 as a default because that is what the constructor for a java hash table uses.
+I figuered that I should trust that their load factor is good because they have probably done a lot more testing with it than I have. 
