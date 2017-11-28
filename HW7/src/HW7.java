@@ -24,21 +24,50 @@ public class HW7 {
 		HW7 hw7 = new HW7();
 		
 		Scanner keyboard = new Scanner(System.in);
-		System.out.print("File path to read from: "); // get file to read from
-		String path = keyboard.nextLine();
+		String path = "";
+		String outPath = "";
+		String hashPath = "";
+	
+		do{
+		System.out.print("Full file path including file name to read from: "); // get file to read from
+		path = keyboard.nextLine();
+		if(path.equals(""))
+			System.out.println("The path contains nothing. Try again.");
+		}
+		while(path.equals(""));
 		
-		System.out.print("Where do you want the HW7.out file to go: "); // get file path to write the HW7.out file
-		String outPath = keyboard.nextLine();
+		ArrayList<String> words = hw7.getUniques(hw7.importData(path)); // imports the words and gets the unique ones, there is try catch block in importData()
 		
-		System.out.print("Where do you want the HW7.hash file to go: "); // get file path to write the HW7.hash file
-		String hashPath = keyboard.nextLine();
+		do{
+			System.out.print("Where do you want the HW7.out file to go?(Full file path including file name please): "); // get file path to write the HW7.out file
+			outPath = keyboard.nextLine();
+			if(outPath.equals(""))
+				System.out.println("The path contains nothing. Try again.");
+			}
+			while(outPath.equals(""));
+		
+		do{
+			System.out.print("Where do you want the HW7.hash file to go?(Full file path including file name please): "); // get file path to write the HW7.hash file
+			hashPath = keyboard.nextLine();
+			if(hashPath.equals(""))
+				System.out.println("The path contains nothing. Try again.");
+			}
+			while(hashPath.equals(""));
 		
 		try{
-		System.out.print("How long would you like the array to be? (for default length of 9227 press any letter)"); // get length of array from user
-		hw7.arrayLength = keyboard.nextInt();
+		System.out.print("How long would you like the array to be? (for default length of 9227 press enter)"); // get length of array from user
+		String input = keyboard.nextLine();
+		if(!input.equals("")) // if the user did not hit enter
+		{
+		hw7.arrayLength = Integer.parseInt(input); // try parsing the input to an int
+		}
 		
 		System.out.print("What load factor would you like to use for the hash table? (for default load factor of 0.75 press enter)"); // get load factor from user
-		hw7.ratio = keyboard.nextDouble();
+		input = keyboard.nextLine();
+		if(!input.equals("")) // if the user did not hit enter
+		{
+		hw7.ratio = Double.parseDouble(input); // try parsing the input to a double
+		}
 		}
 		catch(Exception e){System.out.println("Not Valid input. The Default values of length: 9227 and load factor: 0.75 will be used.");} // use default values in case the user is dumb
 		
@@ -47,7 +76,7 @@ public class HW7 {
 		hw7.table = new LinkedList[hw7.arrayLength]; // makes my hash table
 		hw7.hashTable = new Hashtable<String, String>(hw7.arrayLength, (float)hw7.ratio); // makes java hash table
 		
-		ArrayList<String> words = hw7.getUniques(hw7.importData(path)); // imports the words and gets the unique ones
+		
 		hw7.populateHashTables(words); // populates both hash tables
 		
 		hw7.printMyTableCounts(); // prints biggest number of words in a linked list and number of empty indexes
@@ -132,7 +161,10 @@ public class HW7 {
 			br.close();
 			}
 			catch(Exception e)
-		{System.out.println("The file to read from does not exist. Check your file path.");}
+		{
+		System.out.println("The file to read from does not exist. Check your file path and start again.");
+		System.exit(0); // ends program because nothing good will come after
+		}
 		return stringList;
 	}
 	
